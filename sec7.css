@@ -1,0 +1,137 @@
+/* Contact Section Styling */
+.contact-section {
+  background: #f5f7fa;
+  padding: 60px 8%;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header span {
+  display: block;
+  font-size: 1.2rem;
+  color: #0078d7;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* Layout Container */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Contact Info Section */
+.contact-info {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+  color: #0078d7;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.contact-info address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form {
+  flex: 1 1 45%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #0078d7;
+  outline: none;
+}
+
+/* Two-column row for inputs */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row div {
+  flex: 1 1 48%;
+}
+
+/* Submit Button */
+.contact-form button {
+  background: #0078d7;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+}
